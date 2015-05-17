@@ -60,7 +60,7 @@ sum(is.na(activity$steps))
 
 2. Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc.
 
-  Using mean for 5-minute intervals to replace NA values for step
+Using mean for 5-minute intervals to replace NA values for step. E.g. the mean is derived for all days with intervals = 05. Days with intervals = 05 and steps = N.A. has the step value replaced with the derived means.
 
 3. Create a new dataset that is equal to the original dataset but with the missing data filled in.
 
