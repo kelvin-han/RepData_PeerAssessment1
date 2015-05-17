@@ -123,7 +123,7 @@ activityNoNA$steps[is.na(activityNoNA$steps)] &lt;- with(activityNoNA, tapply(ac
 <pre class="r"><code>sum(is.na(activityNoNA$steps))</code></pre>
 <pre><code>## [1] 0</code></pre>
 <ol start="4" style="list-style-type: decimal">
-<li>Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? [Yes] What is the impact of imputing missing data on the estimates of the total daily number of steps? [Number of steps taken is increased. The median is equal to the mean.]</li>
+<li>Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. Do these values differ from the estimates from the first part of the assignment? What is the impact of imputing missing data on the estimates of the total daily number of steps?</li>
 </ol>
 <p>1a. Calculate the total number of steps taken per day</p>
 <pre class="r"><code>sumByDateAlt &lt;- setNames(aggregate(activityNoNA$step ~ activityNoNA$date, data = activityNoNA, FUN=sum), c(&quot;date&quot;,&quot;steps&quot;))</code></pre>
@@ -137,7 +137,7 @@ activityNoNA$steps[is.na(activityNoNA$steps)] &lt;- with(activityNoNA, tapply(ac
 <p>Median</p>
 <pre class="r"><code>median(sumByDateAlt$steps)</code></pre>
 <pre><code>## [1] 10766.19</code></pre>
-<p>The values differ from the estimates from the first part of the assignment. The mean is the same. The median is now equal to the mean.</p>
+<p>The values differ from the estimates from the first part of the assignment. The median is now equal to the mean.</p>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level3">
 <h3>Are there differences in activity patterns between weekdays and weekends?</h3>

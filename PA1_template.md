@@ -105,8 +105,8 @@ sum(is.na(activityNoNA$steps))
 ```
 
 4. Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day. 
-Do these values differ from the estimates from the first part of the assignment? [Yes]
-What is the impact of imputing missing data on the estimates of the total daily number of steps? [Number of steps taken is increased. The median is equal to the mean.]
+Do these values differ from the estimates from the first part of the assignment? 
+What is the impact of imputing missing data on the estimates of the total daily number of steps? 
 
 1a. Calculate the total number of steps taken per day
 
@@ -145,7 +145,7 @@ median(sumByDateAlt$steps)
 ## [1] 10766.19
 ```
 
-The values differ from the estimates from the first part of the assignment. The mean is the same. The median is now equal to the mean.
+The values differ from the estimates from the first part of the assignment. The median is now equal to the mean.
 
 ### Are there differences in activity patterns between weekdays and weekends? 
 
